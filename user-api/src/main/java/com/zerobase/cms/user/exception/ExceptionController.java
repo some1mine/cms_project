@@ -19,6 +19,7 @@ public class ExceptionController {
         return ResponseEntity.badRequest().body(new ExceptionResponse(e.getMessage(), e.getErrorCode()));
     }
 
+
     @Getter
     @ToString
     @AllArgsConstructor
