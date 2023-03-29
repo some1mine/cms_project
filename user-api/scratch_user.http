@@ -1,0 +1,47 @@
+### 회원가입 ( 고객 )
+POST http://localhost:8081/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "1995-11-06",
+  "email": "parkjw573@naver.com",
+  "name": "myName",
+  "password": "pw",
+  "phone": "01000000000"
+}
+
+### 이메일 인증 ( 고객 )
+GET http://localhost:8081/signup/customer/verify?email=parkjw573@naver.com&code=0H7U8EGlWh
+
+### 로그인 ( 고객 )
+POST http://localhost:8081/signIn/customer
+Content-Type: application/json
+
+{
+  "email": "parkjw573@naver.com",
+  "password": "pw"
+}
+
+### 회원 정보 조회 ( 고객 )
+GET http://localhost:8081/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODAwNTMyNzYsImV4cCI6MTY4MDEzOTY3Nn0.Xn6QUDdcf7FEY2PmifPeFwsoB3u2l2PCp5o_-0-hR20
+
+
+### 잔액 변경 ( 고객 )
+POST http://localhost:8081/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODAwNTMyNzYsImV4cCI6MTY4MDEzOTY3Nn0.Xn6QUDdcf7FEY2PmifPeFwsoB3u2l2PCp5o_-0-hR20
+
+{
+  "from": "server",
+  "message": "charge",
+  "money": 50000
+}
+
+############################
+
+### 회원가입 ( 셀러 )
+
+### 로그인 ( 셀러 )
+
