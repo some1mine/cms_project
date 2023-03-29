@@ -13,6 +13,7 @@ Content-Type: application/json
 ### 이메일 인증 ( 고객 )
 GET http://localhost:8081/signup/customer/verify?email=parkjw573@naver.com&code=0H7U8EGlWh
 
+
 ### 로그인 ( 고객 )
 POST http://localhost:8081/signIn/customer
 Content-Type: application/json
@@ -21,6 +22,7 @@ Content-Type: application/json
   "email": "parkjw573@naver.com",
   "password": "pw"
 }
+
 
 ### 회원 정보 조회 ( 고객 )
 GET http://localhost:8081/customer/getInfo
@@ -39,9 +41,29 @@ X-AUTH-TOKEN:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWX
   "money": 50000
 }
 
-############################
 
 ### 회원가입 ( 셀러 )
+POST http://localhost:8081/signup/seller
+Content-Type: application/json
+
+{
+  "birth": "1995-11-06",
+  "email": "parkjw573@naver.com",
+  "name": "myName",
+  "password": "pw",
+  "phone": "01000000000"
+}
+
+
+### 이메일 인증 ( 셀러 )
+GET http://localhost:8081/signup/seller/verify?email=parkjw573@naver.com&code=J9ikgM0R1x
+
 
 ### 로그인 ( 셀러 )
+POST http://localhost:8081/signIn/seller
+Content-Type: application/json
 
+{
+  "email": "parkjw573@naver.com",
+  "password": "pw"
+}
