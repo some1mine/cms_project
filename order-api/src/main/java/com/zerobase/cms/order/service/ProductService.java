@@ -7,7 +7,6 @@ import com.zerobase.cms.order.domain.product.UpdateProductForm;
 import com.zerobase.cms.order.domain.product.UpdateProductItemForm;
 import com.zerobase.cms.order.domain.repository.ProductRepository;
 import com.zerobase.cms.order.exception.CustomException;
-import com.zerobase.cms.order.exception.ErrorCode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -40,5 +39,12 @@ public class ProductService {
             item.setCount(itemForm.getCount());
         }
         return product;
+    }
+
+    @Transactional
+    public void deleteProduct(Long sellerId, Long productId) {
+        Product product = productRepository.findBySellerIdAndId(sellerId, productId)
+                .orElseThrow(() -> new CustomException(NOT_FOUND_PRODUCT));
+        productRepository.delete(product);
     }
 }

@@ -11,8 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import static com.zerobase.cms.order.exception.ErrorCode.NOT_FOUND_PRODUCT;
-import static com.zerobase.cms.order.exception.ErrorCode.SAME_ITEM_NAME;
+import static com.zerobase.cms.order.exception.ErrorCode.*;
 
 @Service
 @RequiredArgsConstructor
@@ -43,5 +42,13 @@ public class ProductItemService {
         productItem.setPrice(form.getPrice());
 
         return productItem;
+    }
+
+    @Transactional
+    public void deleteProductItem(Long sellerId, Long productItemId) {
+        ProductItem productItem = productItemRepository.findById(productItemId)
+                .filter(pi -> pi.getSellerId().equals(sellerId)).orElseThrow(() -> new CustomException(NOT_FOUND_ITEM));
+
+        productItemRepository.delete(productItem);
     }
 }
