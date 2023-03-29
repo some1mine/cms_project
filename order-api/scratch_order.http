@@ -27,3 +27,33 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xW
   "price": 100000
 }
 
+### 상품 수정
+PUT http://localhost:8082/seller/product
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+
+{
+  "description": "description",
+  "items": [
+    {
+      "id": 1,
+      "count": 1,
+      "name": "270",
+      "price": 100000
+    }
+  ],
+  "id": 1,
+  "name": "nike airForce limited"
+}
+
+### 상품 아이템 수정
+PUT http://localhost:8082/seller/product/item
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+
+{
+  "id": 1,
+  "count": 1,
+  "name": "280",
+  "price": 100000
+}
