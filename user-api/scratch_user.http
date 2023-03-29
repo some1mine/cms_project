@@ -50,13 +50,13 @@ Content-Type: application/json
   "birth": "1995-11-06",
   "email": "parkjw573@naver.com",
   "name": "myName",
-  "password": "pw",
+  "password": "my",
   "phone": "01000000000"
 }
 
 
 ### 이메일 인증 ( 셀러 )
-GET http://localhost:8081/signup/seller/verify?email=parkjw573@naver.com&code=J9ikgM0R1x
+GET http://localhost:8081/signup/seller/verify?email=parkjw573@naver.com&code=vdgTL8wIeO
 
 
 ### 로그인 ( 셀러 )
@@ -65,5 +65,5 @@ Content-Type: application/json
 
 {
   "email": "parkjw573@naver.com",
-  "password": "pw"
+  "password": "my"
 }

@@ -1,0 +1,20 @@
+### 상품 추가
+POST http://localhost:8082/seller/product
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+
+{
+  "description": "description",
+  "items": [
+    {
+      "count": 1,
+      "name": "270",
+      "price": 100000
+    }
+  ],
+  "name": "nike airForce"
+}
+
+### 이메일 인증 ( 고객 )
+GET http://localhost:8082/signup/customer/verify?email=parkjw573@naver.com&code=0H7U8EGlWh
+
