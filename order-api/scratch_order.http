@@ -1,7 +1,7 @@
 ### 상품 추가
 POST http://localhost:8082/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMjY0MjM5LCJleHAiOjE2ODAzNTA2Mzl9.RTfsHc3b5co6m7mtqjQeYYb36Co62l0e7yfiB16UpaA
 
 {
   "description": "description",
@@ -12,13 +12,13 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xW
       "price": 100000
     }
   ],
-  "name": "nike airForce"
+  "name": "nike airForce 2"
 }
 
 ### 상품 아이템 추가
 POST http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMjY0MjM5LCJleHAiOjE2ODAzNTA2Mzl9.RTfsHc3b5co6m7mtqjQeYYb36Co62l0e7yfiB16UpaA
 
 {
   "productId": 1,
@@ -30,7 +30,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xW
 ### 상품 수정
 PUT http://localhost:8082/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMjY0MjM5LCJleHAiOjE2ODAzNTA2Mzl9.RTfsHc3b5co6m7mtqjQeYYb36Co62l0e7yfiB16UpaA
 
 {
   "description": "description",
@@ -49,7 +49,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xW
 ### 상품 아이템 수정
 PUT http://localhost:8082/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMjY0MjM5LCJleHAiOjE2ODAzNTA2Mzl9.RTfsHc3b5co6m7mtqjQeYYb36Co62l0e7yfiB16UpaA
 
 {
   "id": 1,
@@ -82,3 +82,13 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xW
 DELETE http://localhost:8082/seller/product/item?id=1
 Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMDgzNTQwLCJleHAiOjE2ODAxNjk5NDB9.LLzwYVmREbkxmC2f5v-Y5-ciO6SKymiJPpWKucZW58E
+
+### 상품 검색
+GET http://localhost:8082/search/product?name=nike
+Content-Type: application/json
+
+
+### 상품 디테일 검색
+GET http://localhost:8082/search/product/detail?productId=1
+Content-Type: application/json
+
