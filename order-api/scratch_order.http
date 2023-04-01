@@ -92,3 +92,22 @@ Content-Type: application/json
 GET http://localhost:8082/search/product/detail?productId=1
 Content-Type: application/json
 
+### 장바구니 추가
+POST http://localhost:8082/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJaVzd4Y01NdHloZVlmaG5pTndPdlU4Mi9xWXZhcWtvcGcrcW9vZkFLRkp3PSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwMjY0MjM5LCJleHAiOjE2ODAzNTA2Mzl9.RTfsHc3b5co6m7mtqjQeYYb36Co62l0e7yfiB16UpaA
+
+{
+  "description": "description",
+  "id": 1,
+  "items": [
+    {
+      "count": 1,
+      "id": 1,
+      "name": "270",
+      "price": 100000
+    }
+  ],
+  "name": "string",
+  "sellerId": 1
+}
