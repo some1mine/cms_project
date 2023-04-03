@@ -18,6 +18,10 @@ import static com.zerobase.cms.order.exception.ErrorCode.*;
 public class ProductItemService {
     private final ProductRepository productRepository;
     private final ProductItemRepository productItemRepository;
+    @Transactional
+    public ProductItem getProductItem(Long id) {
+        return productItemRepository.getById(id);
+    }
 
     public Product addProductItem(Long sellerId, AddProductItemForm form) {
         Product product = productRepository.findBySellerIdAndId(sellerId, form.getProductId())
